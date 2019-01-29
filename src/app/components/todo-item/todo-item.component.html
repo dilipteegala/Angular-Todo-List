@@ -1,0 +1,5 @@
+<div class="todoWrapper">
+    {{todo.text}}
+</div>
+<button class="removeTodo" (click)="removeTodo()" [hidden]="!todo.text">remove<span class="fa fa-times" ></span> 
+</button>
