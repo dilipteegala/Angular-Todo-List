@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../classes/todo';
-
+import { checkAndUpdateNode } from '@angular/core/src/view/view';
 @Injectable()
 export class TodoService {
 
@@ -21,7 +21,6 @@ export class TodoService {
     this.todos.push(todo);
     this.nextId++;
   }
-
  
 
   public getTodos(): Todo[] {
@@ -32,4 +31,6 @@ export class TodoService {
     this.todos = this.todos.filter((todo)=> todo.id != id);
   }
 
+
+  
 }

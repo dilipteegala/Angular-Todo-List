@@ -16,6 +16,10 @@ export class TodoItemComponent implements OnInit {
 
   ngOnInit() {
   }
+  private undo(): void {
+    this.todoService.removeTodo(this.todo.id);
+  
+  }
 
   private removeTodo(): void {
     this.todoService.removeTodo(this.todo.id);

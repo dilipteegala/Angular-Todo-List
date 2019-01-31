@@ -1,4 +1,5 @@
 <div class="todo-input-wrapper">
-  <input type="text" [(ngModel)]="todoText" value={{todoText}} (keydown.enter)="addTodo()" />
-  <button class="btn btn-primary" (click)="addTodo()" [disabled]="!todoText" [disabled]="todoText.length < 0 " >ADD</button>
+  <input type="text" [(ngModel)]="todoText" value={{todoText}}/>
+  <button class="btn btn-primary" (click)="addTodo()" [disabled]="!todoText" >ADD</button>
+ 
 </div>
