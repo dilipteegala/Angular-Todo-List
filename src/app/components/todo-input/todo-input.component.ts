@@ -5,8 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todo-input',
-  templateUrl: './todo-input.component.html',
-  styleUrls: ['./todo-input.component.css']
+  templateUrl: './todo-input.component.html'
 })
 export class TodoInputComponent implements OnInit {
   onEnter(Todo: string) { this.todoText = Todo;}
